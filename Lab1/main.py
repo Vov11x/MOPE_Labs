@@ -29,9 +29,6 @@ def count_xni(x0i, dxi, x_results):
 
 
 X1, X2, X3 = [generate_x() for i in range(3)]
-# X1, X2, X3 = [0, 0, 15, 5, 6, 4, 8, 10],\
-#              [3, 15, 16, 9, 8, 13, 1, 3],\
-#              [10, 19, 18, 6, 11, 19, 2, 2]
 Y = [f(X1[i], X2[i], X3[i]) for i in range(8)]
 
 X01 = count_x0i(X1)
