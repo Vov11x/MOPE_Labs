@@ -6,8 +6,8 @@
 
 ## Завдання:
 
-![Task_Img](lab1_task.png)
+![Task_Img](lab2_task.png)
 
 ## Результати виконання:
 
-![Results_Img](lab1_results.png)
+![Results_Img](lab2_results.png)
