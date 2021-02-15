@@ -71,3 +71,8 @@ for i in range(N):
         index += 1
 
 print(f"Yэт<- : {Y[index]}")
+
+# Умова варіанту 233
+
+arr = [(i - Yet)**2 for i in Y]
+print(f"Умова варіанту 233: {max(arr)}")
