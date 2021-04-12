@@ -173,11 +173,14 @@ def main(n, m):
     print('F_t =', f_t)
     if F_p < f_t:
         print('Математична модель адекватна експериментальним даним')
+        return 1
     else:
         print('Математична модель не адекватна експериментальним даним')
+        return 0
 
 
 if __name__ == '__main__':
     # calls main func with example args
     M, N = 4, 4
-    main(M, N)
+    if not main(M, N):
+        main(M**2, N**2)
