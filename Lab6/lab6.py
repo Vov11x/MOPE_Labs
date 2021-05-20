@@ -25,6 +25,8 @@ d = None
 q = None
 f3 = None
 
+num_of_koefs = 0
+
 
 def timer_func(func):
     def wrap_func(*args, **kwargs):
@@ -214,6 +216,7 @@ def run_experiment():
                  find_known(7), find_known(8), find_known(9), find_known(10)]
 
         beta = solve(unknown, known)
+        num_of_koefs = len(beta)
         print("Отримане рівняння регресії")
         print("{:.3f} + {:.3f} * X1 + {:.3f} * X2 + {:.3f} * X3 + {:.3f} * Х1X2 + {:.3f} * Х1X3 + {:.3f} * Х2X3"
               "+ {:.3f} * Х1Х2X3 + {:.3f} * X11^2 + {:.3f} * X22^2 + {:.3f} * X33^2 = ŷ\n\tПеревірка"
@@ -274,3 +277,6 @@ def run_experiment():
 
 if __name__ == '__main__':
     run_experiment()
+    if num_of_koefs == 1:
+        m += 1
+        run_experiment()
